@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Booking</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index6.html" class="nav-link">Produk & Layanan</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Booking</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Berita</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index2.html" class="nav-link">Tentang Kami</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+  </nav>
+  <!-- /.navbar -->
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Booking kendaraan</h1>
+            <br>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">Booking</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <form>
+                <div class="form-group row">
+                  <label for="select" class="col-4 col-form-label">Pilih Kendaraan </label> 
+                  <div class="col-8">
+                    <select id="select" name="select" class="custom-select">
+                      <option value="bus wisata">Bus Wisata Bintang 5</option>
+                      <option value="sedan eksekutif">sedan eksekutif</option>
+                      <option value="minibus keluarga">Minibus Keluarga</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text" class="col-4 col-form-label">Nama Peminjam :</label> 
+                  <div class="col-8">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-address-book-o"></i>
+                        </div>
+                      </div> 
+                      <input id="text" name="text" type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-4">Kategori Peminjaman :</label> 
+                  <div class="col-8">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="pribadi"> 
+                      <label for="radio_0" class="custom-control-label">Pribadi</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="Perusahaan/organisasi"> 
+                      <label for="radio_1" class="custom-control-label">Perusahaan/Organisasi</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="textarea" class="col-4 col-form-label">Deskripsi Kebutuhan</label> 
+                  <div class="col-8">
+                    <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="Tanggal" class="col-4 col-form-label">Tanggal Pinjam :</label> 
+                  <input type="date">
+                  <p class="col-ml-2">
+                    s.d
+                  </p>
+                  <div class="col-4">
+                    <input type="date">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text2" class="col-4 col-form-label">Kontak Person :</label> 
+                  <div class="col-8">
+                    <input id="text2" name="text2" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text3" class="col-4 col-form-label">Telepon/HP :</label> 
+                  <div class="col-8">
+                    <input id="text3" name="text3" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text4" class="col-4 col-form-label">Email </label> 
+                  <div class="col-8">
+                    <input id="text4" name="text4" type="text" class="form-control">
+                  </div>
+                </div> 
+                <div class="form-group row">
+                  <div class="offset-4 col-8">
+                    <a href="index2.html">
+                      <button name="Button" type="Button" class="btn btn-primary">Submit</button>
+                    </a>
+                    <button name="Reset" type="Reset" class="btn btn-primary">Reset</button>
+                  </div>
+                </div>
+              </form>
+
+            </table>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2022 <a href="#">Develop by Mahasiswa STT-NF @2022</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
